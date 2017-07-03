@@ -1,0 +1,4 @@
+iwconfig wlan0 mode Ad-Hoc
+iwconfig wlan0 essid 3elshoff
+iwconfig wlan0 channel 10
+iwconfig wlan0 key restricted s:issonaoeumasenha

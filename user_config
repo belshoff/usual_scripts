@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Nome do Usuário: "
+
+read USER
+
+useradd -m $USER
+
+passwd $USER
+
+usermod -a -G sudo $USER
+
+chsh -s /bin/bash $USER

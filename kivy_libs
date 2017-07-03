@@ -1,0 +1,23 @@
+#atualização do sistema
+apt-get update;  apt-get upgrade -y
+
+#pacotes para python 2x e 3x
+apt-get install -y build-essential
+apt-get install -y python-dev
+apt-get install -y python3-dev
+apt-get install -y libsdl2-dev
+apt-get install -y libsdl2-image-dev
+apt-get install -y libsdl2-mixer-dev 
+apt-get install -y libsdl2-ttf-dev
+apt-get install -y libportmidi-dev
+apt-get install -y libswscale-dev
+apt-get install -y libavformat-dev
+apt-get install -y libavcodec-dev
+apt-get install -y zlib1g-dev
+apt-get install -y ffmpeg | apt-get install libav-tools
+
+#em tese não é necessário executar os comandos abaixo
+#se o pacote libav-tools foi instalado
+#add-apt-repository ppa:mc3man/trusty-media
+#apt-get update
+#apt-get install ffmpeg
