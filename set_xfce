@@ -1,0 +1,6 @@
+apt install kali-defaults
+apt install kali-root-login
+apt install desktop-base
+apt install xfce4
+apt install xfce4-places-plugin
+apt install xfce4-goodies
