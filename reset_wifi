@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# TODO: Timer.
+echo "Resetando Wi-Fi"
+ifconfig wlan0 down
+ifconfig wlan0 up
+

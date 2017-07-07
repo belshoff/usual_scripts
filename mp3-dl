@@ -1,0 +1,12 @@
+case $1 in
+	 "playlist")
+		echo "Link da PlayList"
+		read LINK
+		youtube-dl --audio-format mp3 --extract-audio --audio-quality 0 --yes-playlist $LINK
+	;;
+	"video")
+		echo "Link do vídeo:"
+		read LINK
+		youtube-dl --audio-format mp3 --extract-audio --audio-quality 0 $LINK
+	;;
+esac
