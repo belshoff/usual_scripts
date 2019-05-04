@@ -2,15 +2,15 @@ case $1 in
 	 "playlist")
 		echo "Link da PlayList"
 		read LINK
-		youtube-dl -i --audio-format mp3 --extract-audio --audio-quality 0 --yes-playlist $LINK
+		youtube-dl -f best --no-cache-dir -i --audio-format mp3 --extract-audio --audio-quality 0 --yes-playlist $LINK
 	;;
 	"video")
 		echo "Link do vídeo:"
 		read LINK
-		youtube-dl -i $LINK
+		youtube-dl -f best --no-cache-dir -i $LINK
 	;;
 	"audio")
 		echo "Link do vídeo:"
                 read LINK
-                youtube-dl -i --audio-format mp3 --extract-audio --audio-quality 0 $LINK
+                youtube-dl -f best --no-cache-dir -i --audio-format mp3 --extract-audio --audio-quality 0 $LINK
 esac
